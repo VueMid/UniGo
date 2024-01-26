@@ -30,20 +30,20 @@
           class="main__main-icons flex flex-row justify-center items-center gap-4"
         >
           <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-telegram hover:bg-yellow transition-all duration-[500ms] hover:translate-y-[-5px] active:opacity-55"
+            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-telegram hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
             style="color: #283033"
           ></i>
           <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-instagram hover:bg-yellow transition-all duration-[500ms] hover:translate-y-[-5px] active:opacity-55"
+            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-instagram hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
             style="color: #283033"
           ></i>
           <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-facebook hover:bg-yellow transition-all duration-[500ms] hover:translate-y-[-5px] active:opacity-55"
+            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-facebook hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
             style="color: #283033"
           ></i>
         </div>
         <a
-          class="main__tel flex flex-row justify-center items-center gap-[15px] px-[20px] py-[10px] hover:bg-yellow bg-yellow rounded-[50px] active:opacity-55 duration-[500ms]"
+          class="main__tel flex flex-row justify-center items-center gap-[15px] px-[20px] py-[10px] hover:bg-yellow bg-yellow rounded-[50px] active:opacity-55 duration-[400ms]"
           href="tel:+998994665547"
         >
           <lord-icon
@@ -95,7 +95,7 @@ nav ul li {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 nav ul li span {
   position: absolute;
@@ -105,7 +105,7 @@ nav ul li span {
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 25%);
-  transition: 0.5s;
+  transition: 0.4s;
   transition-delay: calc((var(--n) - 1) * 0.1s);
   z-index: -1;
 }
