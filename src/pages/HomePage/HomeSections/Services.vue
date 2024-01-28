@@ -1,10 +1,10 @@
 <template>
   <section class="services lg:mt-[780px]">
     <div
-      class="container services__container flex flex-col justify-center items-start gap-[40px]"
+      class="container services__container flex flex-col justify-center items-start gap-[20px] md:gap-[30px] lg:gap-[40px]"
     >
       <h3
-        class="services__title text-[22px] font-semibold leading-normal text-black"
+        class="services__title text-[22px] font-semibold leading-normal text-black lg:text-[26px]"
       >
         Our services
       </h3>

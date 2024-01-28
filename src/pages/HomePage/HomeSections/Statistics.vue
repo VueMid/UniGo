@@ -1,10 +1,10 @@
 <template>
   <section class="statistics mt-[40px] md:mt-[50px]">
     <div
-      class="container statistics__container flex flex-col justify-center items-start gap-5 md:gap-[30px] lg:gap-[40px]"
+      class="container statistics__container flex flex-col justify-center items-start gap-[20px] md:gap-[30px] lg:gap-[40px]"
     >
       <h4
-        class="statistics__title text-black text-[22px] font-semibold leading-normal"
+        class="statistics__title text-black text-[22px] font-semibold leading-normal lg:text-[26px]"
       >
         Statistics
       </h4>

@@ -1,7 +1,7 @@
 <template>
   <section class="flag mt-[44px] lg:hidden">
     <div
-      class="container flag__container flex flex-col justify-center items-start gap-[20px] md:flex md:flex-col md:justify-center md:items-start md:gap-[34px]"
+      class="container flag__container flex flex-col justify-center items-start gap-[20px] md:flex md:flex-col md:justify-center md:items-start md:gap-[30px]"
     >
       <h4
         class="flag__title text-black text-[22px] font-semibold leading-normal"
@@ -155,7 +155,7 @@ export default {};
     }
     &__second-images {
       position: absolute;
-      top: 69px;
+      top: 65px;
       opacity: 0.3;
     }
     &__bottom-mini-box {

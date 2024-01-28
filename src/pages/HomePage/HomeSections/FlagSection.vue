@@ -3,7 +3,7 @@
     <div
       class="container flag__container lg:flex lg:flex-col lg:justify-center lg:items-start gap-[40px]"
     >
-      <h4 class="flag__title lg:text-[24px] lg:font-semibold lg:leading-normal">
+      <h4 class="flag__title lg:text-[26px] lg:font-semibold lg:leading-normal">
         Countries
       </h4>
       <div
@@ -174,7 +174,7 @@ export default {};
     max-width: 286px !important;
     height: 178px;
     position: absolute;
-    top: 77px;
+    top: 80px;
     opacity: 0;
     transition: all 0.8s ease;
     &:hover {
@@ -212,7 +212,7 @@ export default {};
       width: 222px !important;
       height: 178px;
       position: absolute;
-      top: 77px;
+      top: 81px;
       opacity: 0;
       transition: all 0.8s ease;
       &:hover {
