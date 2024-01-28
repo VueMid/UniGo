@@ -7,7 +7,7 @@
     <Statistics />
     <FlagSection />
     <SecondFlag />
-    <CommentSection />
+    <SecondComment />
   </div>
 </template>
 <script>
@@ -18,7 +18,7 @@ import ServicesSecond from "./HomeSections/ServicesSecond.vue";
 import Statistics from "./HomeSections/Statistics.vue";
 import FlagSection from "./HomeSections/FlagSection.vue";
 import SecondFlag from "./HomeSections/SecondFlag.vue";
-import CommentSection from "./HomeSections/CommentSection.vue";
+import SecondComment from "./HomeSections/SecondComment.vue";
 export default {
   components: {
     HeroSection,
@@ -28,7 +28,7 @@ export default {
     Statistics,
     SecondFlag,
     FlagSection,
-    CommentSection,
+    SecondComment,
   },
 };
 </script>

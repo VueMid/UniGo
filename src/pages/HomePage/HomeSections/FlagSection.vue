@@ -1,5 +1,5 @@
 <template>
-  <section class="flag lg:mt-[66px] hidden lg:block overflow-x-hidden">
+  <section class="flag lg:mt-[66px] hidden lg:block">
     <div
       class="container flag__container lg:flex lg:flex-col lg:justify-center lg:items-start gap-[40px]"
     >
@@ -174,7 +174,7 @@ export default {};
     max-width: 286px !important;
     height: 178px;
     position: absolute;
-    top: 83px;
+    top: 77px;
     opacity: 0;
     transition: all 0.8s ease;
     &:hover {
@@ -212,7 +212,7 @@ export default {};
       width: 222px !important;
       height: 178px;
       position: absolute;
-      top: 83px;
+      top: 77px;
       opacity: 0;
       transition: all 0.8s ease;
       &:hover {
