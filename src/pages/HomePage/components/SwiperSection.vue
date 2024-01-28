@@ -16,7 +16,7 @@
     }"
   >
     <swiper-slide
-      class="carousel__swiper-slide cursor-grab py-[20px]"
+      class="carousel__swiper-slide cursor-grab py-[20px] duration-200"
       v-for="item in galleryArray"
       :key="item"
     >
