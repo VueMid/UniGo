@@ -2,6 +2,7 @@
   <main class="overflow-x-hidden">
     <RouterView />
     <FooterLayout />
+    <FooterBottomLayout />
     <a
       href="#"
       class="scrollup cursor-pointer w-[50px] h-[50px] leading-[50px] text-[17px] md:w-[60px] md:h-[60px] md:leading-[60px] md:text-[30px] lg:w-[45px] lg:h-[45px] lg:leading-[45px] lg:text-[15px] duration-300"
@@ -17,6 +18,7 @@
 </template>
 <script>
 import FooterLayout from "./layouts/FooterLayout/FooterLayout.vue";
+import FooterBottomLayout from "./layouts/FooterBottomLayout.vue/FooterBottomLayout.vue";
 export default {
   mounted() {
     window.addEventListener("scroll", () => {
@@ -30,6 +32,7 @@ export default {
   },
   components: {
     FooterLayout,
+    FooterBottomLayout,
   },
 };
 </script>
