@@ -41,7 +41,7 @@
         >
           {{ item.comment }}
         </q>
-        <img class="mt-1.5 h-[18px]" :src="item.svg" alt="svg__stars" />
+        <img class="mt-2 h-[18px]" :src="item.svg" alt="svg__stars" />
       </div>
     </swiper-slide>
   </swiper>
