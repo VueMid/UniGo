@@ -21,11 +21,11 @@
       :key="item"
     >
       <img
-        class="object-cover w-[71px] h-[71px] rounded-[50px] absolute right-7 translate-y-[-19px]"
+        class="object-cover w-[71px] h-[71px] border-[1px] border-yellow rounded-[50px] absolute right-7 translate-y-[-19px]"
         :src="item.image"
         alt="carousel__images"
       />
-      <div class="div bg-[#FEF6DE] px-[20px] rounded-[15px] py-[30px]">
+      <div class="div bg-[#FEF6DE] px-[20px] rounded-[15px] py-[15px]">
         <h4
           class="carousel__swiper-name text-[18px] font-bold leading-normal text-darker-gray mb-4"
         >
@@ -41,6 +41,7 @@
         >
           {{ item.comment }}
         </q>
+        <img class="mt-2.5 h-[18px]" :src="item.svg" alt="svg__stars" />
       </div>
     </swiper-slide>
   </swiper>
@@ -50,6 +51,9 @@ import Abdulaziz from "@/assets/images/face-1.jpg";
 import Behzod from "@/assets/images/face-2.jpg";
 import Doston from "@/assets/images/face-3.jpg";
 import Umidjon from "@/assets/images/face-4.jpg";
+import fivestars from "@/assets/images/five__stars.png";
+import fourstars from "@/assets/images/four__stars.png";
+import threestars from "@/assets/images/three__stars.png";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -73,6 +77,7 @@ export default {
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,
           image: Abdulaziz,
+          svg: threestars,
         },
         {
           name: `Mo'minjonov Behzod`,
@@ -82,6 +87,7 @@ export default {
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,
           image: Behzod,
+          svg: fourstars,
         },
         {
           name: `Sayyidov Doston`,
@@ -91,6 +97,7 @@ export default {
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,
           image: Doston,
+          svg: fivestars,
         },
         {
           name: `Turabov Umidjon`,
@@ -100,6 +107,7 @@ export default {
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,
           image: Umidjon,
+          svg: fourstars,
         },
       ],
     };
@@ -108,8 +116,6 @@ export default {
 </script>
 <style scoped>
 .carousel__swiper-slide {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -117,8 +123,6 @@ export default {
 }
 .div {
   border: 1px solid #f4ca33;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   display: flex;
   flex-direction: column;
   justify-items: center;

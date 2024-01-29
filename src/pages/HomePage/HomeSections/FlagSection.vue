@@ -23,7 +23,7 @@
             alt="flag__germany"
           />
           <div
-            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b[15px]"
+            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b-[15px]"
           >
             <h5
               class="flag__bottom-titles text-black lg:text-[24px] lg:font-bold lg:leading-normal lg:mb-[15px]"
@@ -57,7 +57,7 @@
             alt="flag__uk"
           />
           <div
-            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b[15px]"
+            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b-[15px]"
           >
             <h5
               class="flag__bottom-titles text-black lg:text-[24px] lg:font-bold lg:leading-normal lg:mb-[15px]"
@@ -91,7 +91,7 @@
             alt="flag__france"
           />
           <div
-            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b[15px]"
+            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b-[15px]"
           >
             <h5
               class="flag__bottom-titles text-black lg:text-[24px] lg:font-bold lg:leading-normal lg:mb-[15px]"
@@ -125,7 +125,7 @@
             alt="flag__usa"
           />
           <div
-            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b[15px]"
+            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b-[15px]``"
           >
             <h5
               class="flag__bottom-titles text-black lg:text-[24px] lg:font-bold lg:leading-normal lg:mb-[15px]"

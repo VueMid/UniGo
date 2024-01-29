@@ -1,5 +1,5 @@
 <template>
-  <section class="carousel mt-[80px] md:hidden">
+  <section class="carousel mt-[80px] lg:hidden">
     <div class="container carousel__container">
       <h2
         class="carousel__main-title text-darker-gray text-[22px] font-semibold leading-normal mb-[5px]"
