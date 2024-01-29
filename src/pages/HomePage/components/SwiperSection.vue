@@ -25,7 +25,7 @@
         :src="item.image"
         alt="carousel__images"
       />
-      <div class="div bg-[#FEF6DE] px-[20px] rounded-[15px] py-[15px]">
+      <div class="div bg-[#FEF6DE] px-[20px] rounded-[15px] py-[12px]">
         <h4
           class="carousel__swiper-name text-[18px] font-bold leading-normal text-darker-gray mb-4"
         >
@@ -41,7 +41,7 @@
         >
           {{ item.comment }}
         </q>
-        <img class="mt-2.5 h-[18px]" :src="item.svg" alt="svg__stars" />
+        <img class="mt-1.5 h-[18px]" :src="item.svg" alt="svg__stars" />
       </div>
     </swiper-slide>
   </swiper>
