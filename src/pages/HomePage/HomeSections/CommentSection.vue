@@ -4,7 +4,7 @@
       class="container carousel__container lg:flex lg:flex-col lg:justify-center lg:items-start"
     >
       <h5
-        class="carousel__top-title lg:text-[24px] lg:font-semibold lg:leading-normal"
+        class="carousel__top-title lg:text-[24px] lg:font-semibold lg:leading-normal text-black"
       >
         Comments
       </h5>
