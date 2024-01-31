@@ -1,6 +1,6 @@
 <template>
-  <footer class="footer mt-[28px]">
-    <div class="container footer__container">
+  <footer class="footer mt-[28px] py-[42px]">
+    <div class="container footer__container flex flex-col gap-[30px]">
       <FooterJoin />
       <div class="flex flex-row justify-between items-start">
         <FooterMenu />
@@ -33,7 +33,6 @@ export default {
 @media (max-width: 767px) {
   .footer {
     width: 100%;
-    height: 578px;
     background-image: url("@/assets/images/footer__background.png");
     background-position: top center;
     background-repeat: no-repeat;

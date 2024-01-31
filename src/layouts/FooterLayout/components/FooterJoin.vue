@@ -1,47 +1,56 @@
 <template>
-  <form
-    class="join__form"
-    @submit.prevent="sendInformation"
-    action="https://echo.htmlacademy.ru"
-    method="post"
-  >
-    <div
-      class="join__input-main-box w-full flex flex-col justify-center items-center"
+  <div class="container w-full px-0">
+    <h4
+      class="join__title text-[20px] text-white font-medium leading-normal mb-[5px]"
     >
-      <div class="join__form-control" :class="error.nameError ? 'invalid' : ''">
+      Join us
+    </h4>
+    <form
+      class="join__form w-full flex flex-col justify-between items-end"
+      @submit.prevent="sendInformation"
+      action="https://echo.htmlacademy.ru"
+      method="post"
+    >
+      <div
+        class="join__form-control w-full"
+        :class="error.nameError ? 'invalid' : ''"
+      >
         <input
-          class="join__input"
+          class="join__input text-[16px] font-normal leading-normal pt-[22px] pb-[12px] focus:py-[12px]"
           type="text"
-          name="text"
           v-model.trim="username"
           id="username"
           autocomplete="off"
           placeholder="First name"
         />
         <span class="join__rendering text-red-600 font-black">
-          {{ error.nameError }}</span
-        >
+          {{ error.nameError }}
+        </span>
       </div>
       <div
-        class="join__form-control"
+        class="join__form-control w-full"
         :class="errorSecond.nameErrorSecond ? 'invalid' : ''"
       >
         <input
-          class="join__input"
+          class="join__input text-[16px] font-normal leading-normal pt-[22px] pb-[12px] focus:py-[12px]"
           type="email"
-          name="email"
           v-model.trim="email"
-          id="tel"
+          id="email"
           autocomplete="off"
           placeholder="E-mail"
         />
         <span class="join__rendering text-red-600 font-black">
-          {{ errorSecond.nameErrorSecond }}</span
-        >
+          {{ errorSecond.nameErrorSecond }}
+        </span>
       </div>
-    </div>
-    <button class="join__button" type="submit">Send</button>
-  </form>
+      <button
+        class="join__button px-[30px] py-[8px] mt-[15px] bg-darker-gray rounded-[41px] text-yellow border-yellow border-[2px] font-normal leading-normal"
+        type="submit"
+      >
+        Send
+      </button>
+    </form>
+  </div>
 </template>
 <script>
 import { useToast } from "vue-toastification";
@@ -106,26 +115,27 @@ export default {
   },
 };
 </script>
-<style scoped lang="scss">
-.join {
-  &__form {
-  }
-
-  &__input-main-box {
-  }
-
-  &__form-control {
-  }
-
-  &__input {
-    font-family: "Inter";
-  }
-
-  &__rendering {
-  }
-
-  &__button {
-    font-family: "Inter";
-  }
+<style scoped>
+#username::placeholder {
+  color: rgb(255, 255, 255) !important;
+  transform: translateX(12px);
+}
+#email::placeholder {
+  color: rgb(255, 255, 255) !important;
+  transform: translateX(12px);
+}
+.join__form {
+}
+.join__input-main-box {
+}
+.join__form-control {
+}
+.join__input {
+  width: 100%;
+  border-bottom: 1px solid white;
+  font-family: "Inter";
+}
+.join__button {
+  font-family: "Inter";
 }
 </style>
