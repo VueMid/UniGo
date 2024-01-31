@@ -92,7 +92,8 @@ export default {
       return isSecondValid;
     },
     sendInformation() {
-      if (this.validatedForm() && this.validatedFormSecond()) {
+      if (this.validatedForm());
+      if (this.validatedFormSecond()) {
         this.sendData(this.username, this.email);
       }
     },
