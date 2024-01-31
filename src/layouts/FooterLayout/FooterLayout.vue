@@ -1,6 +1,6 @@
 <template>
   <footer class="footer mt-[28px] py-[42px]">
-    <div class="container footer__container flex flex-col gap-[30px]">
+    <div class="container footer__container flex flex-col gap-[40px]">
       <FooterJoin />
       <div class="flex flex-row justify-between items-start">
         <FooterMenu />

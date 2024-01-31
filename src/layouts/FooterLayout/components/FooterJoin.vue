@@ -16,7 +16,7 @@
         :class="error.nameError ? 'invalid' : ''"
       >
         <input
-          class="join__input text-[16px] font-normal leading-normal pt-[22px] pb-[12px] focus:py-[12px]"
+          class="join__input text-[16px] font-normal leading-normal py-[12px] focus:py-[12px] text-white focus:text-white"
           type="text"
           v-model.trim="username"
           id="username"
@@ -32,7 +32,7 @@
         :class="errorSecond.nameErrorSecond ? 'invalid' : ''"
       >
         <input
-          class="join__input text-[16px] font-normal leading-normal pt-[22px] pb-[12px] focus:py-[12px]"
+          class="join__input text-[16px] font-normal leading-normal py-[12px] focus:py-[12px] text-white focus:text-white"
           type="email"
           v-model.trim="email"
           id="email"
@@ -44,7 +44,7 @@
         </span>
       </div>
       <button
-        class="join__button px-[30px] py-[8px] mt-[15px] bg-darker-gray rounded-[41px] text-yellow border-yellow border-[2px] font-normal leading-normal"
+        class="join__button px-[30px] py-[8px] mt-[20px] bg-darker-gray rounded-[41px] text-yellow border-yellow border-[2px] font-normal leading-normal active:opacity-70 duration-100"
         type="submit"
       >
         Send
@@ -74,9 +74,6 @@ export default {
       if (this.username.length === 0) {
         isValid = false;
         this.error.nameError = "*Enter your full-name";
-      } else if (this.username !== Number) {
-        isValid = false;
-        this.error.nameError = "*Please enter a word";
       } else {
         isValid = true;
         this.error.nameError = null;

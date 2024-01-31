@@ -8,12 +8,13 @@
     />
     <div class="flex flex-row justify-start items-center gap-[15px]">
       <a
+        class="active:opacity-70 duration-100"
         href="https://t.me/unigo_consulting"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
-          class="active:opacity-60 duration-100"
+          class="active:opacity-70 duration-100"
           src="@/assets/icons/telegram__second.svg"
           width="34"
           height="34"
@@ -21,21 +22,27 @@
         />
       </a>
       <a
+        class="active:opacity-70 duration-100"
         href="https://www.instagram.com/unigo_uz/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
-          class="active:opacity-60 duration-100"
+          class="active:opacity-70 duration-100"
           src="@/assets/icons/instagram__second.svg"
           width="34"
           height="34"
           alt="instagram"
         />
       </a>
-      <a href="" target="_blank" rel="noopener noreferrer">
+      <a
+        class="active:opacity-70 duration-100"
+        href=""
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
-          class="active:opacity-60 duration-100"
+          class="active:opacity-70 duration-100"
           src="@/assets/icons/facebook__second.svg"
           width="34"
           height="34"

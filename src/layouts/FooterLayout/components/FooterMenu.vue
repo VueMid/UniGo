@@ -3,7 +3,7 @@
     <ul class="main__list flex flex-col justify-center items-start gap-[6px]">
       <h2 class="text-[20px] text-white font-medium leading-normal mb-2">Menu</h2>
       <li
-        class="main__lists cursor-pointer text-white/90 text-[14px] font-normal leading-normal"
+        class="main__lists cursor-pointer text-white/90 text-[16px] font-normal leading-normal"
         v-for="item in footerMenu"
         :key="item"
       >
