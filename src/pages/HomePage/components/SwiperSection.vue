@@ -29,7 +29,7 @@
         class="div bg-[#FEF6DE] px-[20px] rounded-[15px] py-[12px] md:py-[20px]"
       >
         <h4
-          class="carousel__swiper-name text-[18px] font-bold leading-normal text-darker-gray mb-4"
+          class="carousel__swiper-name text-[18px] font-bold leading-normal text-darker-gray mb-2"
         >
           {{ item.name }}
         </h4>

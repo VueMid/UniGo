@@ -69,7 +69,7 @@ export default {
 <style scoped lang="scss">
 @media (max-width: 1023px) {
   .router-link-exact-active {
-    color: yellow;
+    color: #f4ca33;
   }
   .menu {
     width: 100%;

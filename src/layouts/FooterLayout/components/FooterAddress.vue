@@ -1,5 +1,31 @@
-<template></template>
+<template>
+  <div>
+    <h2 class="text-[20px] text-white font-bold leading-normal mb-2">
+      Address
+    </h2>
+    <address>
+      <p class="w-[148px] text-[14px] text-white/90">
+        Uzbekistan, Tashkent, Mustaqillik 72A
+      </p>
+    </address>
+    <a
+      class="active:opacity-70 duration-150 mt-[10px] px-[16px] py-[8px] bg-darker-gray rounded-[50px] text-yellow flex flex-row justify-center items-center gap-2"
+      href="https://yandex.com/map-widget/v1/?ll=69.301593%2C41.321279&mode=routes&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIyNTQwNTM0EjdPyrt6YmVraXN0b24sIFRvc2hrZW50LCBNdXN0YXFpbGxpayBzaG9oIGtvyrtjaGFzaSwgNzlBIgoNR5qKQhX_SCVC&z=17.12"
+      target="_blank"
+    >
+      <i class="fa-solid fa-location-dot" style="color: #ffd43b"></i>
+      <p>view on map</p>
+    </a>
+  </div>
+</template>
 <script>
 export default {};
 </script>
-<style></style>
+<style scoped>
+h2 {
+  font-family: "Inter";
+}
+p {
+  font-family: "Inter";
+}
+</style>

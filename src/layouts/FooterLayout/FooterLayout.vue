@@ -6,7 +6,7 @@
         <FooterMenu />
         <FooterPrograms />
       </div>
-      <div class="flex flex-row justify-between items-start">
+      <div class="flex flex-row justify-between items-end mt-[10px]">
         <FooterLogoIcon />
         <FooterAddress />
       </div>
@@ -32,17 +32,6 @@ export default {
 <style scoped lang="scss">
 @media (max-width: 767px) {
   .footer {
-    width: 100%;
-    height: 578px;
-    background: linear-gradient(
-      rgba(244, 202, 51, 0.6),
-      rgba(244, 202, 51, 0.6)
-    );
-    background-repeat: no-repeat;
-  }
-  .footer__container {
-    position: absolute;
-    z-index: -1;
     width: 100%;
     height: 578px;
     background-image: url("@/assets/images/footer__background.png");
