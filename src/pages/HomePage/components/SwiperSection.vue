@@ -133,11 +133,9 @@ export default {
 .swiper-name {
   font-family: "Inter";
 }
-
 .swiper-university {
   font-family: "Inter";
 }
-
 .comments {
   font-family: "Inter";
   max-width: 200px !important;

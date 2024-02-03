@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-start gap-4">
+  <div class="flex flex-row justify-center items-center gap-4">
     <img
       @click="$router.push('/')"
       class="header__logo w-[133px] h-[23px]"

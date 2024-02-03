@@ -2,6 +2,7 @@
   <main class="overflow-x-hidden">
     <RouterView />
     <FooterLayout />
+    <FooterMdLayout />
     <FooterBottomLayout />
     <a
       href="#"
@@ -18,6 +19,7 @@
 </template>
 <script>
 import FooterLayout from "./layouts/FooterLayout/FooterLayout.vue";
+import FooterMdLayout from "./layouts/FooterMdLayout/FooterMdLayout.vue";
 import FooterBottomLayout from "./layouts/FooterBottomLayout.vue/FooterBottomLayout.vue";
 export default {
   mounted() {
@@ -33,6 +35,7 @@ export default {
   components: {
     FooterLayout,
     FooterBottomLayout,
+    FooterMdLayout,
   },
 };
 </script>

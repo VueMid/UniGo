@@ -1,7 +1,7 @@
 <template>
   <div class="container w-full px-0">
     <h4
-      class="join__title text-[20px] text-white font-medium leading-normal mb-[5px]"
+      class="join__title text-[20px] text-darker-gray font-semibold leading-normal mb-[5px]"
     >
       Join us
     </h4>
@@ -16,7 +16,7 @@
         :class="error.nameError ? 'invalid' : ''"
       >
         <input
-          class="join__input text-[16px] font-normal leading-normal py-[12px] focus:py-[12px] text-white focus:text-white"
+          class="join__input text-[16px] font-normal leading-normal py-[12px] focus:py-[12px] text-darker-gray focus:text-darker-gray"
           type="text"
           v-model.trim="username"
           id="username"
@@ -32,7 +32,7 @@
         :class="errorSecond.nameErrorSecond ? 'invalid' : ''"
       >
         <input
-          class="join__input text-[16px] font-normal leading-normal py-[12px] focus:py-[12px] text-white focus:text-white"
+          class="join__input text-[16px] font-normal leading-normal py-[12px] focus:py-[12px] text-darker-gray focus:text-darker-gray"
           type="email"
           v-model.trim="email"
           id="email"
@@ -115,11 +115,11 @@ export default {
 </script>
 <style scoped>
 #username::placeholder {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(40, 48, 51) !important;
   transform: translateX(12px);
 }
 #email::placeholder {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(40, 48, 51) !important;
   transform: translateX(12px);
 }
 .join__form {
@@ -130,8 +130,9 @@ export default {
 }
 .join__input {
   width: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #283033;
   font-family: "Inter";
+  transition: 0.5ms;
 }
 .join__button {
   font-family: "Inter";
