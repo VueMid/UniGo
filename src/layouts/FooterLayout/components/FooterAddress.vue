@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center md:hidden">
     <div class="flex flex-col justify-center items-start ml-auto">
       <h2
         class="text-[20px] text-darker-gray font-semibold leading-normal mb-2"

@@ -1,13 +1,13 @@
 <template>
-  <footer class="footer md:mt-[92px] hidden md:block">
-    <div class="container flex flex-col justify-center items-start">
+  <footer class="footer md:mt-[92px] hidden md:block py-[42px]">
+    <div class="container flex flex-col justify-between items-start">
       <div class="w-full flex flex-row justify-between items-start">
         <FooterMdMenu />
         <FooterMdAddress />
         <FooterMdPrograms />
         <FooterMdJoin />
       </div>
-      <FooterMdLogoIcon />
+      <FooterMdLogoIcon class="mt-[50px]" />
     </div>
   </footer>
 </template>

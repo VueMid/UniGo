@@ -1,5 +1,5 @@
 <template>
-  <div class="container w-full px-0">
+  <div class="container w-full px-0 md:hidden">
     <h4
       class="join__title text-[20px] text-darker-gray font-semibold leading-normal mb-[5px]"
     >
