@@ -16,7 +16,7 @@
         :class="error.nameError ? 'invalid' : ''"
       >
         <input
-          class="join__input outline-none focus:text-darker-gray text-[16px] font-medium pb-2"
+          class="join__input outline-none focus:text-darker-gray text-[16px] font-medium pb-2 focus:pb-2"
           type="text"
           v-model.trim="username"
           id="username"
@@ -32,7 +32,7 @@
         :class="error.nameError ? 'invalid' : ''"
       >
         <input
-          class="join__input outline-none focus:text-darker-gray text-[16px] font-medium pb-2"
+          class="join__input outline-none focus:text-darker-gray text-[16px] font-medium pb-2 focus:pb-2"
           type="email"
           v-model.trim="email"
           id="email"
