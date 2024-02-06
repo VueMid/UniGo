@@ -8,7 +8,7 @@
       </h2>
       <address>
         <p
-          class="w-[168px] leading-[28px] text-[16px] not-italic text-darker-gray"
+          class="w-[168px] leading-[28px] text-[16px] not-italic text-darker-gray font-medium"
         >
           Uzbekistan, Tashkent, Mustaqillik 72A
         </p>

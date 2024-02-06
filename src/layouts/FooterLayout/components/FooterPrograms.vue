@@ -6,16 +6,24 @@
       >
         Programs
       </h2>
-      <li class="main__lists text-[16px] leading-normal text-darker-gray">
+      <li
+        class="main__lists text-[16px] leading-normal text-darker-gray font-medium"
+      >
         <p>MBA</p>
       </li>
-      <li class="main__lists text-[16px] leading-normal text-darker-gray">
+      <li
+        class="main__lists text-[16px] leading-normal text-darker-gray font-medium"
+      >
         <p>BBA</p>
       </li>
-      <li class="main__lists text-[16px] leading-normal text-darker-gray">
+      <li
+        class="main__lists text-[16px] leading-normal text-darker-gray font-medium"
+      >
         <p>Work and Travel</p>
       </li>
-      <li class="main__lists text-[16px] leading-normal text-darker-gray">
+      <li
+        class="main__lists text-[16px] leading-normal text-darker-gray font-medium"
+      >
         <p>MPA</p>
       </li>
     </ul>

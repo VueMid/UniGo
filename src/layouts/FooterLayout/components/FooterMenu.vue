@@ -7,7 +7,7 @@
         Menu
       </h2>
       <li
-        class="main__lists cursor-pointer text-darker-gray text-[16px] font-normal leading-normal"
+        class="main__lists cursor-pointer text-darker-gray text-[16px] font-medium leading-normal"
         v-for="item in footerMenu"
         :key="item"
       >

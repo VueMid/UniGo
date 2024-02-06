@@ -16,14 +16,14 @@
         :class="error.nameError ? 'invalid' : ''"
       >
         <input
-          class="join__input text-[16px] font-normal leading-normal py-[12px] focus:py-[12px] text-darker-gray focus:text-darker-gray"
+          class="join__input text-[16px] font-medium leading-normal py-[12px] focus:py-[12px] text-darker-gray focus:text-darker-gray"
           type="text"
           v-model.trim="username"
           id="username"
           autocomplete="off"
           placeholder="First name"
         />
-        <span class="join__rendering text-red-600 font-black">
+        <span class="join__rendering text-red-600 font-medium">
           {{ error.nameError }}
         </span>
       </div>
@@ -32,14 +32,14 @@
         :class="errorSecond.nameErrorSecond ? 'invalid' : ''"
       >
         <input
-          class="join__input text-[16px] font-normal leading-normal py-[12px] focus:py-[12px] text-darker-gray focus:text-darker-gray"
+          class="join__input text-[16px] font-medium leading-normal py-[12px] focus:py-[12px] text-darker-gray focus:text-darker-gray"
           type="email"
           v-model.trim="email"
           id="email"
           autocomplete="off"
           placeholder="E-mail"
         />
-        <span class="join__rendering text-red-600 font-black">
+        <span class="join__rendering text-red-600 font-medium">
           {{ errorSecond.nameErrorSecond }}
         </span>
       </div>

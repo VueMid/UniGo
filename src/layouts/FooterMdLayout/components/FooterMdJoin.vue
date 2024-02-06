@@ -23,7 +23,7 @@
           autocomplete="off"
           placeholder="First name"
         />
-        <span class="join__rendering text-red-600 font-black text-[16px]">
+        <span class="join__rendering text-red-600 font-medium text-[16px]">
           {{ error.nameError }}
         </span>
       </div>
@@ -39,7 +39,7 @@
           autocomplete="off"
           placeholder="E-mail"
         />
-        <span class="join__rendering text-red-600 font-black text-[16px]">
+        <span class="join__rendering text-red-600 font-medium text-[16px]">
           {{ errorSecond.nameErrorSecond }}
         </span>
       </div>

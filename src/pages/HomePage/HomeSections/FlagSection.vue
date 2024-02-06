@@ -125,7 +125,7 @@
             alt="flag__usa"
           />
           <div
-            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b-[15px]``"
+            class="flag__bottom-mini-box lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-[20px] lg:px-[20px] bg-[#FEF6DE] lg:rounded-b-[15px]"
           >
             <h5
               class="flag__bottom-titles text-black lg:text-[24px] lg:font-bold lg:leading-normal lg:mb-[15px]"
@@ -137,20 +137,45 @@
               tellus venenatis quis congue. Imperdiet nibh massa dictum eu
               blandit pretium interdum faucibus condimentum.
             </p>
-            <router-link
+            <button
+              type="button"
+              @click="openModal"
               class="fla__main-link text-yellow text-[18px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
-              to="/сountries"
             >
               Know more
-            </router-link>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Modal -->
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpened">
+      <UkComponent @closeModal="closeModal" />
+    </div>
+  </Transition>
 </template>
 <script>
-export default {};
+import UkComponent from "../components/UkComponent.vue";
+export default {
+  data() {
+    return {
+      isModalOpened: false,
+    };
+  },
+  methods: {
+    openModal() {
+      this.isModalOpened = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModal() {
+      this.isModalOpened = false;
+      document.body.style.overflow = "auto";
+    },
+  },
+  components: { UkComponent },
+};
 </script>
 <style lang="scss" scoped>
 .flag {
