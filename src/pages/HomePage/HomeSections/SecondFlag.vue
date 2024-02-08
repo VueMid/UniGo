@@ -42,12 +42,13 @@
             <div
               class="flag__bottom-texts flex flex-row justify-center items-center gap-[10px]"
             >
-              <router-link
-                class="flag__main-link text-[12px] font-medium leading-normal text-yellow"
-                to="/сountries"
+              <button
+                type="button"
+                @click="openModalGe"
+                class="fla__main-link text-yellow text-[18px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
               >
                 Know more
-              </router-link>
+              </button>
             </div>
           </div>
         </div>
@@ -82,12 +83,13 @@
             <div
               class="flag__bottom-texts flex flex-row justify-center items-center gap-[10px]"
             >
-              <router-link
-                class="flag__main-link text-[12px] font-medium leading-normal text-yellow"
-                to="/сountries"
+              <button
+                type="button"
+                @click="openModalUk"
+                class="fla__main-link text-yellow text-[18px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
               >
                 Know more
-              </router-link>
+              </button>
             </div>
           </div>
         </div>
@@ -122,23 +124,86 @@
             <div
               class="flag__bottom-texts flex flex-row justify-center items-center gap-[10px]"
             >
-              <router-link
-                class="flag__main-link text-[12px] font-medium leading-normal text-yellow"
-                to="/сountries"
+              <button
+                type="button"
+                @click="openModalUs"
+                class="fla__main-link text-yellow text-[18px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
               >
                 Know more
-              </router-link>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Modal -->
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpenedGe">
+      <GermanyMdComponent @closeModalGe="closeModalGe" />
+    </div>
+  </Transition>
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpenedUk">
+      <UkMdComponent @closeModalUk="closeModalUk" />
+    </div>
+  </Transition>
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpenedUs">
+      <UsaMdComponent @closeModalUs="closeModalUs" />
+    </div>
+  </Transition>
 </template>
 <script>
-export default {};
+import GermanyMdComponent from "../components/GermanyMdComponent.vue";
+import UkMdComponent from "../components/UkMdComponent.vue";
+import UsaMdComponent from "../components/UsaMdComponent.vue";
+export default {
+  data() {
+    return {
+      isModalOpenedGe: false,
+      isModalOpenedUk: false,
+      isModalOpenedUs: false,
+    };
+  },
+  components: { GermanyMdComponent, UkMdComponent, UsaMdComponent },
+  methods: {
+    openModalGe() {
+      this.isModalOpenedGe = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModalGe() {
+      this.isModalOpenedGe = false;
+      document.body.style.overflow = "auto";
+    },
+    openModalUk() {
+      this.isModalOpenedUk = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModalUk() {
+      this.isModalOpenedUk = false;
+      document.body.style.overflow = "auto";
+    },
+    openModalUs() {
+      this.isModalOpenedUs = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModalUs() {
+      this.isModalOpenedUs = false;
+      document.body.style.overflow = "auto";
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
+.modal-enter-active,
+.modal-leave-active {
+  transition: 0.4s ease-in-out;
+}
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
 @media (max-width: 1023px) {
   .flag {
     &__container {

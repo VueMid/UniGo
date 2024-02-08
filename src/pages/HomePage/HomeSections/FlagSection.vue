@@ -35,12 +35,13 @@
               tellus venenatis quis congue. Imperdiet nibh massa dictum eu
               blandit pretium interdum faucibus condimentum.
             </p>
-            <router-link
+            <button
+              type="button"
+              @click="openModalGe"
               class="fla__main-link text-yellow text-[18px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
-              to="/сountries"
             >
               Know more
-            </router-link>
+            </button>
           </div>
         </div>
         <div
@@ -69,12 +70,13 @@
               tellus venenatis quis congue. Imperdiet nibh massa dictum eu
               blandit pretium interdum faucibus condimentum.
             </p>
-            <router-link
+            <button
+              type="button"
+              @click="openModalUk"
               class="fla__main-link text-yellow text-[18px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
-              to="/сountries"
             >
               Know more
-            </router-link>
+            </button>
           </div>
         </div>
         <div
@@ -103,12 +105,13 @@
               tellus venenatis quis congue. Imperdiet nibh massa dictum eu
               blandit pretium interdum faucibus condimentum.
             </p>
-            <router-link
+            <button
+              type="button"
+              @click="openModalKo"
               class="fla__main-link text-yellow text-[18px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
-              to="/сountries"
             >
               Know more
-            </router-link>
+            </button>
           </div>
         </div>
         <div
@@ -139,7 +142,7 @@
             </p>
             <button
               type="button"
-              @click="openModal"
+              @click="openModalUs"
               class="fla__main-link text-yellow text-[18px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
             >
               Know more
@@ -151,33 +154,87 @@
   </section>
   <!-- Modal -->
   <Transition name="modal" class="relative z-[1111]">
-    <div class="easy__main-modal" v-if="isModalOpened">
-      <UkComponent @closeModal="closeModal" />
+    <div class="easy__main-modal" v-if="isModalOpenedGe">
+      <GermanyComponent @closeModalGe="closeModalGe" />
+    </div>
+  </Transition>
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpenedUk">
+      <UkComponent @closeModalUk="closeModalUk" />
+    </div>
+  </Transition>
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpenedKo">
+      <KoreaComponent @closeModalKo="closeModalKo" />
+    </div>
+  </Transition>
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpenedUs">
+      <UsaComponent @closeModalUs="closeModalUs" />
     </div>
   </Transition>
 </template>
 <script>
+import GermanyComponent from "../components/GermanyComponent.vue";
 import UkComponent from "../components/UkComponent.vue";
+import KoreaComponent from "../components/KoreaComponent.vue";
+import UsaComponent from "../components/UsaComponent.vue";
 export default {
   data() {
     return {
-      isModalOpened: false,
+      isModalOpenedGe: false,
+      isModalOpenedUk: false,
+      isModalOpenedKo: false,
+      isModalOpenedUs: false,
     };
   },
   methods: {
-    openModal() {
-      this.isModalOpened = true;
+    openModalGe() {
+      this.isModalOpenedGe = true;
       document.body.style.overflow = "hidden";
     },
-    closeModal() {
-      this.isModalOpened = false;
+    closeModalGe() {
+      this.isModalOpenedGe = false;
+      document.body.style.overflow = "auto";
+    },
+    openModalUk() {
+      this.isModalOpenedUk = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModalUk() {
+      this.isModalOpenedUk = false;
+      document.body.style.overflow = "auto";
+    },
+    openModalKo() {
+      this.isModalOpenedKo = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModalKo() {
+      this.isModalOpenedKo = false;
+      document.body.style.overflow = "auto";
+    },
+    openModalUs() {
+      this.isModalOpenedUs = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModalUs() {
+      this.isModalOpenedUs = false;
       document.body.style.overflow = "auto";
     },
   },
-  components: { UkComponent },
+  components: { GermanyComponent, UkComponent, KoreaComponent, UsaComponent },
 };
 </script>
 <style lang="scss" scoped>
+.modal-enter-active,
+.modal-leave-active {
+  transition: 0.4s ease-in-out;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
 .flag {
   &__container {
     position: relative;
