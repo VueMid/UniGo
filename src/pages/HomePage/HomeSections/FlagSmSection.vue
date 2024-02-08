@@ -233,4 +233,255 @@ export default {
     }
   }
 }
+@media (max-width: 767px) {
+  .flag {
+    &__container {
+      position: relative;
+    }
+    &__title {
+      font-family: "Inter";
+    }
+    &__bottom-box {
+    }
+    &__bottom-boxes {
+    }
+    &__images {
+    }
+    &__second-images {
+      position: absolute;
+      top: 54px;
+      opacity: 0.3;
+    }
+    &__bottom-mini-box {
+    }
+    &__bottom-titles {
+      font-family: "Inter";
+    }
+    &__bottom-texts {
+      font-family: "Inter";
+    }
+  }
+}
+@media (max-width: 420px) {
+  .flag {
+    &__container {
+      position: relative;
+    }
+    &__title {
+      font-family: "Inter";
+    }
+    &__bottom-box {
+    }
+    &__bottom-boxes {
+      width: 180px;
+    }
+    &__bottom-boxes-box {
+      width: 180px;
+    }
+    &__images {
+      width: 180px;
+    }
+    &__second-images {
+      width: 180px;
+      position: absolute;
+      top: 54px;
+      opacity: 0.3;
+    }
+    &__bottom-mini-box {
+    }
+    &__bottom-titles {
+      font-family: "Inter";
+    }
+    &__bottom-texts {
+      font-family: "Inter";
+    }
+  }
+}
+@media (max-width: 410px) {
+  .flag {
+    &__container {
+      position: relative;
+    }
+    &__title {
+      font-family: "Inter";
+    }
+    &__bottom-box {
+    }
+    &__bottom-boxes {
+      width: 170px;
+    }
+    &__bottom-boxes-box {
+      width: 176px;
+    }
+    &__images {
+      width: 176px;
+    }
+    &__second-images {
+      width: 176px;
+      position: absolute;
+      top: 54px;
+      opacity: 0.3;
+    }
+    &__bottom-mini-box {
+    }
+    &__bottom-titles {
+      font-family: "Inter";
+    }
+    &__bottom-texts {
+      font-family: "Inter";
+    }
+  }
+}
+@media (max-width: 390px) {
+  .flag {
+    &__container {
+      position: relative;
+    }
+    &__title {
+      font-family: "Inter";
+    }
+    &__bottom-box {
+    }
+    &__bottom-boxes {
+      width: 170px;
+    }
+    &__bottom-boxes-box {
+      width: 170px;
+    }
+    &__images {
+      width: 170px;
+    }
+    &__second-images {
+      width: 170px;
+      position: absolute;
+      top: 54px;
+      opacity: 0.3;
+    }
+    &__bottom-mini-box {
+    }
+    &__bottom-titles {
+      font-family: "Inter";
+    }
+    &__bottom-texts {
+      font-family: "Inter";
+    }
+  }
+}
+@media (max-width: 380px) {
+  .flag {
+    &__container {
+      position: relative;
+    }
+    &__title {
+      font-family: "Inter";
+    }
+    &__bottom-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__bottom-boxes {
+      width: 162px;
+    }
+    &__bottom-boxes-box {
+      width: 153px;
+    }
+    &__images {
+      width: 153px;
+    }
+    &__second-images {
+      width: 153px;
+      position: absolute;
+      top: 54px;
+      opacity: 0.3;
+    }
+    &__bottom-mini-box {
+    }
+    &__bottom-titles {
+      font-family: "Inter";
+    }
+    &__bottom-texts {
+      font-family: "Inter";
+    }
+  }
+}
+@media (max-width: 375px) {
+  .flag {
+    &__container {
+      position: relative;
+    }
+    &__title {
+      font-family: "Inter";
+    }
+    &__bottom-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__bottom-boxes {
+      width: 162px;
+    }
+    &__bottom-boxes-box {
+      width: 162px;
+    }
+    &__images {
+      width: 162px;
+    }
+    &__second-images {
+      width: 162px;
+      position: absolute;
+      top: 54px;
+      opacity: 0.3;
+    }
+    &__bottom-mini-box {
+    }
+    &__bottom-titles {
+      font-family: "Inter";
+    }
+    &__bottom-texts {
+      font-family: "Inter";
+    }
+  }
+}
+@media (max-width: 360px) {
+  .flag {
+    &__container {
+      position: relative;
+    }
+    &__title {
+      font-family: "Inter";
+    }
+    &__bottom-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__bottom-boxes {
+      width: 155px;
+    }
+    &__bottom-boxes-box {
+      width: 155px;
+    }
+    &__images {
+      width: 155px;
+    }
+    &__second-images {
+      width: 155px;
+      position: absolute;
+      top: 54px;
+      opacity: 0.3;
+    }
+    &__bottom-mini-box {
+    }
+    &__bottom-titles {
+      font-family: "Inter";
+    }
+    &__bottom-texts {
+      font-family: "Inter";
+    }
+  }
+}
 </style>
