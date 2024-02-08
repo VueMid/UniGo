@@ -1,5 +1,5 @@
 <template>
-  <section class="flag mt-[44px] lg:hidden">
+  <section class="flag mt-[44px] hidden md:block lg:hidden">
     <div
       class="container flag__container flex flex-col justify-center items-start gap-[20px] md:flex md:flex-col md:justify-center md:items-start md:gap-[30px]"
     >

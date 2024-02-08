@@ -230,7 +230,6 @@ export default {
 .modal-leave-active {
   transition: 0.4s ease-in-out;
 }
-
 .modal-enter-from,
 .modal-leave-to {
   opacity: 0;
