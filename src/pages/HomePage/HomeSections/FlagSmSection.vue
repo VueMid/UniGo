@@ -81,7 +81,7 @@
             <div class="flag__bottom-texts">
               <button
                 type="button"
-                @click="openModalUk"
+                @click="openModalUs"
                 class="flag__main-link text-yellow text-[16px] font-medium leading-normal flex flex-row justify-center items-center gap-[15px] lg:active:opacity-60 duration-300"
               >
                 Know more
@@ -92,14 +92,49 @@
       </div>
     </div>
   </section>
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpenedUk">
+      <UkSmComponent @closeModalUk="closeModalUk" />
+    </div>
+  </Transition>
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="easy__main-modal" v-if="isModalOpenedUs">
+      <UsSmComponent @closeModalUs="closeModalUs" />
+    </div>
+  </Transition>
 </template>
 <script>
+import UkSmComponent from "../components/UkSmComponent.vue";
+import UsSmComponent from "../components/UsSmComponent.vue";
 export default {
   data() {
-    return {};
+    return {
+      isModalOpenedUk: false,
+      isModalOpenedUs: false,
+    };
   },
-  components: {},
-  methods: {},
+  components: {
+    UkSmComponent,
+    UsSmComponent,
+  },
+  methods: {
+    openModalUk() {
+      this.isModalOpenedUk = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModalUk() {
+      this.isModalOpenedUk = false;
+      document.body.style.overflow = "auto";
+    },
+    openModalUs() {
+      this.isModalOpenedUs = true;
+      document.body.style.overflow = "hidden";
+    },
+    closeModalUs() {
+      this.isModalOpenedUs = false;
+      document.body.style.overflow = "auto";
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
