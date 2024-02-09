@@ -1,15 +1,15 @@
 <template>
   <div class="Home-page">
-    <!-- <HeroSection /> -->
-    <!-- <MainHeroSection /> -->
-    <!-- <Services /> -->
-    <!-- <ServicesSecond /> -->
-    <!-- <Statistics /> -->
-    <!-- <FlagSection /> -->
-    <!-- <SecondFlag /> -->
+    <HeroSection />
+    <MainHeroSection />
+    <Services />
+    <ServicesSecond />
+    <Statistics />
+    <FlagSection />
+    <SecondFlag />
     <FlagSmSection />
-    <!-- <SecondComment /> -->
-    <!-- <CommentSection /> -->
+    <SecondComment />
+    <CommentSection />
   </div>
 </template>
 <script>
