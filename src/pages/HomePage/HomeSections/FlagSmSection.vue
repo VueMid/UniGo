@@ -113,6 +113,7 @@ export default {
 }
 @media (max-width: 767px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -130,7 +131,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 154px;
@@ -148,6 +149,7 @@ export default {
 }
 @media (max-width: 430px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -165,7 +167,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 180px;
@@ -183,6 +185,7 @@ export default {
 }
 @media (max-width: 410px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -200,7 +203,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 160px;
@@ -218,6 +221,7 @@ export default {
 }
 @media (max-width: 390px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -235,7 +239,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 160px;
@@ -253,6 +257,7 @@ export default {
 }
 @media (max-width: 365px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -270,7 +275,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 155px;
@@ -288,6 +293,7 @@ export default {
 }
 @media (max-width: 360px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -305,7 +311,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 150px;
@@ -323,6 +329,7 @@ export default {
 }
 @media (max-width: 350px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -340,7 +347,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 145px;
@@ -358,6 +365,7 @@ export default {
 }
 @media (max-width: 340px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -375,7 +383,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 140px;
@@ -393,6 +401,7 @@ export default {
 }
 @media (max-width: 330px) {
   .flag {
+    position: relative;
   }
   .flag__container {
   }
@@ -410,7 +419,7 @@ export default {
   }
   .flag__second-images {
     position: absolute;
-    top: 97px;
+    top: 53px;
     opacity: 0.3;
     width: 100%;
     max-width: 135px;
