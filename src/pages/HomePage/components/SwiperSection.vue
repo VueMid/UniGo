@@ -74,7 +74,7 @@ export default {
         {
           name: `Otaboyev Abdulaziz`,
           university: `Turin`,
-          comment: `  I studied in the same course with Muhammadjon Tahirjanov and his
+          comment: `I studied in the same course with Muhammadjon Tahirjanov and his
                 projects caused many good comments by his Teacher. In this
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,
@@ -84,7 +84,7 @@ export default {
         {
           name: `Mo'minjonov Behzod`,
           university: `Turin`,
-          comment: `  I studied in the same course with Muhammadjon Tahirjanov and his
+          comment: `I studied in the same course with Muhammadjon Tahirjanov and his
                 projects caused many good comments by his Teacher. In this
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,
@@ -94,7 +94,7 @@ export default {
         {
           name: `Sayyidov Doston`,
           university: `Turin`,
-          comment: `  I studied in the same course with Muhammadjon Tahirjanov and his
+          comment: `I studied in the same course with Muhammadjon Tahirjanov and his
                 projects caused many good comments by his Teacher. In this
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,
@@ -104,7 +104,7 @@ export default {
         {
           name: `Turabov Umidjon`,
           university: `Turin`,
-          comment: `  I studied in the same course with Muhammadjon Tahirjanov and his
+          comment: `I studied in the same course with Muhammadjon Tahirjanov and his
                 projects caused many good comments by his Teacher. In this
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,

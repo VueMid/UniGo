@@ -16,340 +16,35 @@
         class="carousel__row container flex flex-col justify-between items-center"
       >
         <div class="carousel owl-carousel cursor-grab">
-          <div class="flex flex-col justify-center items-center h-[290px]">
+          <div
+            class="flex flex-col justify-center items-start h-[290px]"
+            v-for="item in galleryArray"
+            :key="item"
+          >
             <img
               class="carousel__username-photo"
-              src="@/assets/images/face-1.jpg"
+              :src="item.image"
               alt="username__photo"
             />
             <div
-              class="carousel__mini-boxes bg-[#FEF6DE] lg:py-[20px] lg:pl-[15px] lg:rounded-[15px] lg:pr-[15px]"
+              class="carousel__mini-boxes bg-[#FEF6DE] lg:py-[20px] lg:px-[15px] lg:rounded-[15px]"
             >
               <h5 class="carousel__username lg:mb-[5px] text-[18px] font-bold">
-                Otaboyev Abdulaziz
+                {{ item.name }}
               </h5>
               <p
                 class="carousel__university-name lg:mb-[10px] font-medium opacity-65"
               >
-                Turin
+                {{ item.university }}
               </p>
               <q class="carousel__user-comment lg:w-max-[350px] font-thin">
-                I studied in the same course with Muhammadjon Tahirjanov and his
-                projects caused many good comments by his Teacher. In this
-                regard, I wish you success in your work and 5 stars from me
-                Supporters
+                {{ item.comment }}
               </q>
-              <div
-                class="flex flex-row justify-start items-center lg:mt-[10px]"
-              >
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-gray-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-gray-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col justify-center items-center h-[290px]">
-            <img
-              class="carousel__username-photo"
-              src="@/assets/images/face-2.jpg"
-              alt="username__photo"
-            />
-            <div
-              class="carousel__mini-boxes bg-[#FEF6DE] lg:py-[20px] lg:pl-[15px] lg:rounded-[15px] lg:pr-[15px]"
-            >
-              <h5 class="carousel__username lg:mb-[5px] text-[18px] font-bold">
-                Otaboyev Abdulaziz
-              </h5>
-              <p
-                class="carousel__university-name lg:mb-[10px] font-medium opacity-65"
-              >
-                Turin
-              </p>
-              <q class="carousel__user-comment lg:w-max-[350px] font-thin">
-                I studied in the same course with Muhammadjon Tahirjanov and his
-                projects caused many good comments by his Teacher. In this
-                regard, I wish you success in your work and 5 stars from me
-                Supporters
-              </q>
-              <div
-                class="flex flex-row justify-start items-center lg:mt-[10px]"
-              >
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-gray-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col justify-center items-center h-[290px]">
-            <img
-              class="carousel__username-photo"
-              src="@/assets/images/face-3.jpg"
-              alt="username__photo"
-            />
-            <div
-              class="carousel__mini-boxes bg-[#FEF6DE] lg:py-[20px] lg:pl-[15px] lg:rounded-[15px] lg:pr-[15px]"
-            >
-              <h5 class="carousel__username lg:mb-[5px] text-[18px] font-bold">
-                Otaboyev Abdulaziz
-              </h5>
-              <p
-                class="carousel__university-name lg:mb-[10px] font-medium opacity-65"
-              >
-                Turin
-              </p>
-              <q class="carousel__user-comment lg:w-max-[350px] font-thin">
-                I studied in the same course with Muhammadjon Tahirjanov and his
-                projects caused many good comments by his Teacher. In this
-                regard, I wish you success in your work and 5 stars from me
-                Supporters
-              </q>
-              <div
-                class="flex flex-row justify-start items-center lg:mt-[10px]"
-              >
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-gray-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col justify-center items-center h-[290px]">
-            <img
-              class="carousel__username-photo"
-              src="@/assets/images/face-4.jpg"
-              alt="username__photo"
-            />
-            <div
-              class="carousel__mini-boxes bg-[#FEF6DE] lg:py-[20px] lg:pl-[15px] lg:rounded-[15px] lg:pr-[15px]"
-            >
-              <h5 class="carousel__username lg:mb-[5px] text-[18px] font-bold">
-                Otaboyev Abdulaziz
-              </h5>
-              <p
-                class="carousel__university-name lg:mb-[10px] font-medium opacity-65"
-              >
-                Turin
-              </p>
-              <q class="carousel__user-comment lg:w-max-[350px] font-thin">
-                I studied in the same course with Muhammadjon Tahirjanov and his
-                projects caused many good comments by his Teacher. In this
-                regard, I wish you success in your work and 5 stars from me
-                Supporters
-              </q>
-              <div
-                class="flex flex-row justify-start items-center lg:mt-[10px]"
-              >
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-yellow-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#F4CA33"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-                <svg
-                  class="w-4 h-4 text-gray-300 me-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 22 20"
-                >
-                  <path
-                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                  />
-                </svg>
-              </div>
+              <img
+                class="mt-2 h-[18px] object-contain object-left"
+                :src="item.svg"
+                alt="svg__stars"
+              />
             </div>
           </div>
         </div>
@@ -403,6 +98,13 @@
   </section>
 </template>
 <script>
+import Abdulaziz from "@/assets/images/face-1.jpg";
+import Behzod from "@/assets/images/face-2.jpg";
+import Doston from "@/assets/images/face-3.jpg";
+import Umidjon from "@/assets/images/face-4.jpg";
+import fivestars from "@/assets/images/five__stars.png";
+import fourstars from "@/assets/images/four__stars.png";
+import threestars from "@/assets/images/three__stars.png";
 import { ref, onMounted } from "vue";
 export default {
   setup() {
@@ -427,6 +129,48 @@ export default {
     return {
       nextSlide,
       prevSlide,
+      galleryArray: [
+        {
+          name: `Otaboyev Abdulaziz`,
+          university: `Turin`,
+          comment: `I studied in the same course with Muhammadjon Tahirjanov and his
+                projects caused many good comments by his Teacher. In this
+                regard, I wish you success in your work and 5 stars from me
+                Supporters`,
+          image: Abdulaziz,
+          svg: threestars,
+        },
+        {
+          name: `Mo'minjonov Behzod`,
+          university: `Turin`,
+          comment: `I studied in the same course with Muhammadjon Tahirjanov and his
+                projects caused many good comments by his Teacher. In this
+                regard, I wish you success in your work and 5 stars from me
+                Supporters`,
+          image: Behzod,
+          svg: fourstars,
+        },
+        {
+          name: `Sayyidov Doston`,
+          university: `Turin`,
+          comment: `I studied in the same course with Muhammadjon Tahirjanov and his
+                projects caused many good comments by his Teacher. In this
+                regard, I wish you success in your work and 5 stars from me
+                Supporters`,
+          image: Doston,
+          svg: fivestars,
+        },
+        {
+          name: `Turabov Umidjon`,
+          university: `Turin`,
+          comment: `I studied in the same course with Muhammadjon Tahirjanov and his
+                projects caused many good comments by his Teacher. In this
+                regard, I wish you success in your work and 5 stars from me
+                Supporters`,
+          image: Umidjon,
+          svg: fourstars,
+        },
+      ],
     };
   },
 };
