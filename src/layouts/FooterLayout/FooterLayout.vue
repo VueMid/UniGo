@@ -1,14 +1,16 @@
 <template>
-  <footer class="footer mt-[28px] py-[42px] md:hidden">
+  <footer class="footer mt-[28px] py-[46px] md:hidden">
     <div class="container footer__container flex flex-col gap-[40px]">
-      <FooterJoin />
       <div class="flex flex-row justify-between items-start">
-        <FooterMenu />
-        <FooterPrograms />
-      </div>
-      <div class="flex flex-row justify-between items-end mt-[10px]">
         <FooterLogoIcon />
         <FooterAddress />
+      </div>
+      <div class="flex flex-row-reverse justify-between items-start">
+        <FooterPrograms />
+        <FooterMenu />
+      </div>
+      <div class="flex flex-row justify-between items-end mt-[10px]">
+        <FooterJoin />
       </div>
     </div>
   </footer>

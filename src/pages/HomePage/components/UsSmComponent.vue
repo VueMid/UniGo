@@ -40,7 +40,9 @@
           src="@/assets/images/usa.jpg"
           alt="usa"
         />
-        <h2 class="us__title font-semibold mb-3 px-[15px] pt-[8px]">USA</h2>
+        <h2 class="us__title text-[22px] font-semibold mb-3 px-[15px] pt-[8px]">
+          USA
+        </h2>
         <div
           class="us__bottom-mini-boxes flex flex-row justify-start items-start gap-2 mb-2 px-[15px]"
         >

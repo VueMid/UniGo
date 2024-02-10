@@ -40,7 +40,7 @@
           src="@/assets/images/london.jpg"
           alt="uk"
         />
-        <h2 class="uk__title font-semibold mb-3 px-[15px] pt-[8px]">UK</h2>
+        <h2 class="uk__title text-[22px] font-semibold mb-2 px-[15px] pt-[8px]">UK</h2>
         <div
           class="uk__bottom-mini-boxes flex flex-row justify-start items-start gap-2 mb-2 px-[15px]"
         >
