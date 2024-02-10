@@ -1,9 +1,7 @@
 <template>
   <nav class="main__left-navbar">
     <ul class="main__list flex flex-col justify-center items-start gap-[6px]">
-      <h2
-        class="text-[20px] text-darker-gray font-semibold leading-normal mb-2"
-      >
+      <h2 class="text-[20px] text-darker-gray font-bold leading-normal mb-2">
         Menu
       </h2>
       <li
@@ -11,7 +9,7 @@
         v-for="item in footerMenu"
         :key="item"
       >
-        <router-link class="main__links" :to="item.link">
+        <router-link class="main__links font-semibold" :to="item.link">
           {{ item.name }}
         </router-link>
       </li>

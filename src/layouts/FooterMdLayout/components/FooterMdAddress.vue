@@ -2,13 +2,13 @@
   <div class="flex flex-col justify-center items-start">
     <div class="flex flex-col justify-center items-start ml-auto">
       <h2
-        class="text-[20px] text-darker-gray font-semibold leading-normal mb-3.5"
+        class="text-[20px] text-darker-gray font-bold leading-normal mb-3.5"
       >
         Address
       </h2>
       <address>
         <p
-          class="w-[168px] leading-[28px] text-[16px] not-italic text-darker-gray font-medium"
+          class="w-[168px] leading-[28px] text-[16px] not-italic text-darker-gray font-semibold"
         >
           Uzbekistan, Tashkent, Mustaqillik 72A
         </p>

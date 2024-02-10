@@ -17,11 +17,11 @@
   </footer>
 </template>
 <script>
+import FooterMdLogoIcon from "./components/FooterMdLogoIcon.vue";
 import FooterMdMenu from "./components/FooterMdMenu.vue";
 import FooterMdAddress from "./components/FooterMdAddress.vue";
 import FooterMdPrograms from "./components/FooterMdPrograms.vue";
 import FooterMdJoin from "./components/FooterMdJoin.vue";
-import FooterMdLogoIcon from "./components/FooterMdLogoIcon.vue";
 export default {
   components: {
     FooterMdMenu,

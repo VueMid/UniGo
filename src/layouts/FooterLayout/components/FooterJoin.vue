@@ -1,7 +1,7 @@
 <template>
   <div class="container w-full px-0 md:hidden">
     <h4
-      class="join__title text-[20px] text-darker-gray font-semibold leading-normal mb-[5px]"
+      class="join__title text-[20px] text-darker-gray font-bold leading-normal mb-[5px]"
     >
       Join us
     </h4>
@@ -116,23 +116,23 @@ export default {
 <style scoped>
 #username::placeholder {
   color: rgb(40, 48, 51) !important;
-  transform: translateX(12px);
 }
 #email::placeholder {
   color: rgb(40, 48, 51) !important;
-  transform: translateX(12px);
 }
 .join__form {
 }
 .join__input-main-box {
 }
 .join__form-control {
+  overflow-x: hidden;
 }
 .join__input {
   width: 100%;
   border-bottom: 1px solid #283033;
   font-family: "Inter";
   transition: 0.5ms;
+  padding-left: 12px;
 }
 .join__button {
   font-family: "Inter";
