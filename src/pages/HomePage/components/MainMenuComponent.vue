@@ -29,18 +29,38 @@
         <div
           class="main__main-icons flex flex-row justify-center items-center gap-4"
         >
-          <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-telegram hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
-            style="color: #283033"
-          ></i>
-          <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-instagram hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
-            style="color: #283033"
-          ></i>
-          <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-facebook hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
-            style="color: #283033"
-          ></i>
+          <a
+            href="https://t.me/unigo_consulting"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-telegram hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
+              style="color: #283033"
+            >
+            </i>
+          </a>
+          <a
+            class="bg-white rounded-[12px] w-[41px] h-[41px] flex justify-center items-center transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55 hover:bg-yellow"
+            href="https://www.instagram.com/unigo_uz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="img"
+              width="28"
+              height="28"
+              src="@/assets/icons/instagram__second.svg"
+              alt="instagram"
+            />
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i
+              class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-facebook hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
+              style="color: #283033"
+            >
+            </i>
+          </a>
         </div>
         <a
           class="main__tel flex flex-row justify-center items-center gap-[15px] px-[20px] py-[10px] hover:bg-yellow bg-yellow rounded-[50px] active:opacity-55 duration-[400ms]"
@@ -75,6 +95,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.img svg:hover {
+  fill: red($color: #000000);
+}
 nav ul {
   list-style-type: none;
   margin: 0;

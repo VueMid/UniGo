@@ -1,9 +1,7 @@
 <template>
   <div class="flex flex-col justify-center items-start">
     <div class="flex flex-col justify-center items-start ml-auto">
-      <h2
-        class="text-[20px] text-darker-gray font-bold leading-normal mb-3.5"
-      >
+      <h2 class="text-[20px] text-darker-gray font-bold leading-normal mb-3.5">
         Address
       </h2>
       <address>

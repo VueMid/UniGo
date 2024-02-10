@@ -24,14 +24,14 @@
         />
       </a>
       <a
-        class="active:opacity-70 duration-100"
+        class="active:opacity-70 duration-100 hover:bg-yellow"
         href="https://www.instagram.com/unigo_uz/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
           class="active:opacity-70 w-[42px] h-[42px] lg:hover:translate-y-[-4px] duration-300"
-          src="@/assets/icons/instagram__second.svg"
+          src="@/assets/icons/instagram__copy.svg"
           width="34"
           height="34"
           alt="instagram"

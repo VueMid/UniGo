@@ -29,7 +29,7 @@
       >
         <img
           class="active:opacity-70 duration-100"
-          src="@/assets/icons/instagram__second.svg"
+          src="@/assets/icons/instagram__copy.svg"
           width="34"
           height="34"
           alt="instagram"

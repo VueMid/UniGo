@@ -1,9 +1,7 @@
 <template>
   <nav class="main__left-navbar">
     <ul class="main__list flex flex-col justify-center items-start gap-[6px]">
-      <h2
-        class="text-[20px] text-darker-gray font-bold leading-normal mb-2"
-      >
+      <h2 class="text-[20px] text-darker-gray font-bold leading-normal mb-2">
         Programs
       </h2>
       <li

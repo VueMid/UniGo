@@ -40,7 +40,6 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 @media (max-width: 1023px) {
   .footer {
     width: 100%;
