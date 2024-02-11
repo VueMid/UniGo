@@ -121,7 +121,7 @@
 $(document).ready(function () {
   $(".num").counterUp({
     delay: 10,
-    time: 600,
+    time: 500,
   });
 });
 </script>
