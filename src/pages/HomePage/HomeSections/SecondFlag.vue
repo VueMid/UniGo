@@ -28,7 +28,7 @@
             class="flag__bottom-mini-box flag__bottom-mini-box flex flex-col justify-center items-start py-[15px] px-[10px] bg-[#FEF6DE] md:flex md:flex-col md:justify-center md:items-start md:py-[15px] md:px-[10px] rounded-b-[15px]"
           >
             <h5
-              class="flag__bottom-titles text-base font-bold leading-normal mb-[10px]"
+              class="flag__bottom-titles text-base font-bold leading-normal mb-[10px] text-[22px]"
             >
               Germany
             </h5>
@@ -110,7 +110,7 @@
             class="flag__bottom-mini-box flex flex-col justify-center items-start py-[15px] px-[10px] bg-[#FEF6DE] rounded-b-[15px] md:flex md:flex-col md:justify-center md:items-start md:py-[15px] md:px-[10px]"
           >
             <h5
-              class="flag__bottom-titles text-base font-bold leading-normal mb-[10px]"
+              class="flag__bottom-titles text-base font-bold leading-normal mb-[10px] text-[22px]"
             >
               USA
             </h5>

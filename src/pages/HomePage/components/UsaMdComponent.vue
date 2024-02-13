@@ -35,7 +35,7 @@
       <div
         class="us__left-box md:flex md:flex-col md:justify-start md:items-start"
       >
-        <h2 class="us__title font-semibold md:mb-3">USA</h2>
+        <h2 class="us__title font-semibold text-[22px] md:mb-3">USA</h2>
         <div
           class="us__left-mini-boxes md:flex md:flex-row md:justify-start md:items-start md:gap-2 md:mb-2"
         >

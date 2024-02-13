@@ -33,7 +33,7 @@
         <span class="sr-only">Close modal</span>
       </button>
       <div class="germany__left-box flex flex-col justify-start items-start">
-        <h2 class="germany__title font-semibold mb-3">Germany</h2>
+        <h2 class="germany__title font-semibold text-[22px] mb-3">Germany</h2>
         <div
           class="germany__left-mini-boxes flex flex-row justify-start items-start gap-2 mb-2"
         >

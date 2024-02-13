@@ -137,7 +137,7 @@ export default {
                 projects caused many good comments by his Teacher. In this
                 regard, I wish you success in your work and 5 stars from me
                 Supporters`,
-          image: Abdulaziz,
+          image: Abdulaziz,   
           svg: threestars,
         },
         {
