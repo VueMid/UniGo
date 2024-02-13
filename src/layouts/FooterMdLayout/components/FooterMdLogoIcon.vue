@@ -4,7 +4,7 @@
   >
     <img
       @click="$router.push('/')"
-      class="header__logo w-[133px] h-[23px] lg:w-[215px] lg:h-[38px]"
+      class="header__logo w-[133px] h-[23px] lg:w-[215px] lg:h-[38px] cursor-pointer active:opacity-65 duration-100"
       src="@/assets/icons/logo.svg"
       alt="logo__image"
     />

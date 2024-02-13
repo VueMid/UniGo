@@ -11,10 +11,7 @@
       >
         <source src="@/assets/images/unigo.mp4" type="video/mp4" />
       </video>
-      <div
-        class="header__left-box duration-200 active:opacity-60"
-        @click="$router.push('/')"
-      >
+      <div class="header__left-box" @click="$router.push('/')">
         <img
           class="header__logo w-[155px] h-[33px]"
           src="@/assets/icons/logo__image-second.svg"
@@ -22,18 +19,17 @@
         />
       </div>
     </div>
-    <MainHeaderComponent />
   </section>
 </template>
 <script>
-import MainHeaderComponent from "../components/MainHeaderComponent.vue";
 export default {
-  components: { MainHeaderComponent },
+  components: {},
 };
 </script>
 <style lang="scss" scoped>
 .hero {
   &__background-video {
+    background-attachment: fixed !important;
     margin: 0 auto !important;
     position: absolute;
     z-index: -1;

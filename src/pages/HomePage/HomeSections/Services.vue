@@ -1,5 +1,5 @@
 <template>
-  <section class="services lg:mt-[780px]">
+  <section class="services lg:mt-[660px]">
     <div
       class="container services__container flex flex-col justify-center items-start gap-[20px] md:gap-[30px] lg:gap-[40px]"
     >

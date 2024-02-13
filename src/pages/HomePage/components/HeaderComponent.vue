@@ -4,7 +4,7 @@
     :class="isScrolled ? 'header__scrolled py-[26px]' : 'py-[36px]'"
   >
     <div
-      class="header__left-box cursor-pointer duration-200 active:opacity-60"
+      class="header__left-box cursor-pointer duration-100 active:opacity-65"
       @click="$router.push('/')"
     >
       <img

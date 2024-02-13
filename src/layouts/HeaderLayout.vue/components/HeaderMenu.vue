@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header hidden lg:block">
     <div
       class="header__buttons-box flex flex-row justify-center items-center gap-0 pt-[16px] duration-150 transition-all"
     >
@@ -13,7 +13,9 @@
         >
           Menu
         </p>
-        <button class="header__button flex flex-row justify-center itec">
+        <button
+          class="header__button flex flex-row justify-center items-center"
+        >
           <img
             class="header__burger-image w-[24px] h-[24px]"
             src="@/assets/icons/menu__second.svg"
@@ -31,7 +33,7 @@
         >
           Menu
         </p>
-        <button class="header__button flex flex-row justify-center items-center">
+        <button class="header__button flex flex-row justify-center itec">
           <img
             class="header__burger-image w-[24px] h-[24px]"
             src="@/assets/icons/close__menu-second.svg"
@@ -42,11 +44,11 @@
     </div>
   </header>
   <Transition name="menu">
-    <MainMenuComponent v-if="isOpen" @click="toggle" />
+    <HeaderNavbar v-if="isOpen" @click="toggle" />
   </Transition>
 </template>
 <script>
-import MainMenuComponent from "./MainMenuComponent.vue";
+import HeaderNavbar from "./HeaderNavbar.vue";
 export default {
   data() {
     return {
@@ -58,7 +60,7 @@ export default {
       this.isOpen = !this.isOpen;
     },
   },
-  components: { MainMenuComponent },
+  components: { HeaderNavbar },
   mounted() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
@@ -75,7 +77,7 @@ export default {
 }
 .menu-enter-from,
 .menu-leave-to {
-  transform: translateY(-160%);
+  transform: translateY(-120%);
 }
 .header {
   z-index: 1111;
@@ -87,6 +89,7 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+  transform: translateY(-6px);
   &__button {
     background: none;
     border: none;
