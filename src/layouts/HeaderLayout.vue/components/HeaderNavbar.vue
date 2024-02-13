@@ -30,7 +30,7 @@
           class="main__main-icons flex flex-row justify-center items-center gap-4"
         >
           <a
-            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-5px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px]"
+            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-5px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px] border-[2px] border-yellow"
             href="https://t.me/unigo_consulting"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,19 +42,20 @@
             </i>
           </a>
           <a
-            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-5px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px]"
+            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-5px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px] border-[2px] border-yellow"
             href="https://www.instagram.com/unigo_uz/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i
-              class="cursor-pointer fa-brands fa-xl fa-instagram"
-              style="color: #283033"
-            >
-            </i>
+            <img
+              width="23.5"
+              height="23.5"
+              src="@/assets/icons/instagram__second.svg"
+              alt="instagram__second"
+            />
           </a>
           <a
-            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-5px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px]"
+            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-6px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px] border-[2px] border-yellow"
             href="http://"
             target="_blank"
             rel="noopener noreferrer"
