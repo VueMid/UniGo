@@ -29,18 +29,42 @@
         <div
           class="main__main-icons flex flex-row justify-center items-center gap-4"
         >
-          <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-telegram hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
-            style="color: #283033"
-          ></i>
-          <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-instagram hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
-            style="color: #283033"
-          ></i>
-          <i
-            class="cursor-pointer px-[10px] py-[20px] bg-white rounded-[12px] fa-brands fa-xl fa-facebook hover:bg-yellow transition-all duration-[400ms] hover:translate-y-[-5px] active:opacity-55"
-            style="color: #283033"
-          ></i>
+          <a
+            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-5px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px]"
+            href="https://t.me/unigo_consulting"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              class="cursor-pointer fa-brands fa-xl fa-telegram"
+              style="color: #283033"
+            >
+            </i>
+          </a>
+          <a
+            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-5px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px]"
+            href="https://www.instagram.com/unigo_uz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              class="cursor-pointer fa-brands fa-xl fa-instagram"
+              style="color: #283033"
+            >
+            </i>
+          </a>
+          <a
+            class="cursor-pointer duration-500 active:opacity-55 transition-all hover:translate-y-[-5px] hover:bg-yellow bg-white rounded-[12px] px-[10px] py-[10px]"
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              class="cursor-pointer fa-brands fa-xl fa-facebook"
+              style="color: #283033"
+            >
+            </i>
+          </a>
         </div>
         <a
           class="main__tel flex flex-row justify-center items-center gap-[15px] px-[20px] py-[10px] hover:bg-yellow bg-yellow rounded-[50px] active:opacity-55 duration-[400ms]"

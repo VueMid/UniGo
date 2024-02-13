@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row justify-center items-center gap-4 lg:flex lg:flex-col lg:justify-center lg:items-center gap-8"
+    class="flex flex-row justify-center items-center lg:flex lg:flex-col lg:justify-center lg:items-center gap-8"
   >
     <img
       @click="$router.push('/')"
@@ -24,7 +24,7 @@
         />
       </a>
       <a
-        class="active:opacity-70 duration-100 hover:bg-yellow"
+        class="active:opacity-70 duration-100"
         href="https://www.instagram.com/unigo_uz/"
         target="_blank"
         rel="noopener noreferrer"
