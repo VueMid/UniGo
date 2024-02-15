@@ -11,7 +11,7 @@
         v-for="item in footerMenu"
         :key="item"
       >
-        <router-link class="main__links font-semibold" :to="item.link">
+        <router-link class="main__links font-medium" :to="item.link">
           {{ item.name }}
         </router-link>
       </li>
